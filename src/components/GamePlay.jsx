@@ -54,7 +54,7 @@ const GamePlay = () => {
             </div>
             <RollDice currentDice={currentDice} rollDice={rollDice} />
             <div className='btns'>
-                <OutlineButton onClick={resetScore}>Reset</OutlineButton>
+                <OutlineButton onClick={resetScore} className='btn'>Reset</OutlineButton>
                 <Button onClick={() => setShowRules((prev) => !prev)}>
                     {showRules ? "Hide" : "Show"} Rules
                 </Button>
@@ -73,6 +73,7 @@ padding: 1rem 0;
         display: flex;
         justify-content: space-around;
         align-items: end;
+        width: 100%;
     }
 
     .btns{
@@ -81,5 +82,9 @@ padding: 1rem 0;
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .btn{
+        border: 1px solid gray;
     }
 `

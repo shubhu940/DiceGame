@@ -3,10 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shubhu940.github.io/Dice-Game/",
+  "homepage": "https://shubhu940.github.io/dice-game/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
